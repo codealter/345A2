@@ -6,7 +6,7 @@ class Cartoon : Object{
 	C name;
 	C likes;
 public:
-	void set(List, C){
+	void set(List, int i = DATA_MEMBERS_PER_OBJECT){
 
 	}
 	virtual const std::string getDSV(char c = VALUE_DELIMITER) const{
