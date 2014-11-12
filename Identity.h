@@ -11,8 +11,10 @@ public:
 	{
 
 	}
-	void set(List<NVPair<std::string, std::string>, DATA_MEMBERS_PER_OBJECT> l){}
-	
+	void set(List<NVPair<std::string, std::string>, DATA_MEMBERS_PER_OBJECT> l)
+	{
+
+	}
 	const std::string getDVS(char c = VALUE_DELIMITER ) const
 	{
 		return std::string();

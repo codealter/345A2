@@ -1,15 +1,17 @@
 //Cartoon.h
 #include "List.h"
 template<typename C>
-class Cartoon : Object{
-	C type;
+class Cartoon : public Object{
+	/*C type;
 	C name;
-	C likes;
-public:
-	void set(List, int i = DATA_MEMBERS_PER_OBJECT){
+	C likes;*/
+	auto list;
 
+public:
+	void set(List<NVPair<std::string, std::string>, DATA_MEMBERS_PER_OBJECT> l){
+		 
 	}
-	virtual const std::string getDSV(char c = VALUE_DELIMITER) const{
+	const std::string getDSV(char c = VALUE_DELIMITER) const{
 
 	}
 };
