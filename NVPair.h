@@ -3,20 +3,35 @@
 
 template<typename A, typename B>
 class NVPair{
-	A Name;
-	B Value;
+	A a;
+	B b;
 public:
-	NVPair(){
-
+	NVPair(){}
+	NVPair(const A& aa, const B& bb)// - constructor initializes the object to the referenced values
+	{
+		a = aa;
+		b = bb;
 	}
-	NVPair(A name, B value){
-		Name = name;
-		Value = value;
+	const A& first() const// - returns an unmodifiable reference to the first object of the pair
+	{
+		return a;
 	}
-	A name() const{
-		return Name;
+	const B& second() const// - returns an unmodifiable reference to the second object of the pair
+	{
+		return b;
 	}
-	B value() const{
-		return Value;
+	int width() const// - returns the field width of A - defaults to 0
+	{
+		int len = a.length();
+		return len;
 	}
 };
+
+template<>
+int NVPair<std::string, std::string>::width() const {
+	return a.length();
+}
+template<>
+int NVPair<std::string, double>::width() const{
+	return a.length();
+}
