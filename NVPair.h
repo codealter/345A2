@@ -12,11 +12,11 @@ public:
 		a = aa;
 		b = bb;
 	}
-	const A& first() const// - returns an unmodifiable reference to the first object of the pair
+	const A& name() const// - returns an unmodifiable reference to the first object of the pair
 	{
 		return a;
 	}
-	const B& second() const// - returns an unmodifiable reference to the second object of the pair
+	const B& value() const// - returns an unmodifiable reference to the second object of the pair
 	{
 		return b;
 	}
