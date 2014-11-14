@@ -1,5 +1,5 @@
 //NVPair.h
-
+#pragma once
 
 template<typename A, typename B>
 class NVPair{

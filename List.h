@@ -1,4 +1,5 @@
 //List.h
+#pragma once
 template<typename T, int max>
 class List{
 	static const int arr = 1 * max;
