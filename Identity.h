@@ -5,12 +5,9 @@
 #include <string>
 #include "JSONReader.h"
 using namespace std;
+char VALUE_DELIMITER = '|';
 class Identity : public Object{
 public:
-	Identity()
-	{
-
-	}
 	void set(List<NVPair<std::string, std::string>, DATA_MEMBERS_PER_OBJECT> l)
 	{
 
@@ -19,10 +16,9 @@ public:
 	{
 		return std::string();
 	}
-	~Identity()
-	{
-
-	}
+	/*ostream& operator<<(ostream& os, const Identity& i){
+		return os;
+	}*/
 };
 ostream& operator<<(ostream& os, const Identity& i){
 	return os;

@@ -27,11 +27,11 @@ public:
 	}
 };
 
-template<>
-int NVPair<std::string, std::string>::width() const {
-	return a.length();
-}
-template<>
-int NVPair<std::string, double>::width() const{
-	return a.length();
-}
+////template<>
+//int NVPair<std::string, std::string>::width() const {
+//	return a.length();
+//}
+//template<>
+//int NVPair<std::string, double>::width() const{
+//	return a.length();
+//}
