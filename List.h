@@ -1,6 +1,4 @@
 //List.h
-
-
 template<typename T, int max>
 class List{
 	static const int arr = 1 * max;
